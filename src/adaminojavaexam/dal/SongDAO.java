@@ -31,6 +31,16 @@ public class SongDAO {
     }
 
     /**
+     * Adds the song to the DB
+     *
+     * @param userSong
+     */
+    public void addSongToDB(Song userSong) {
+        //TODO ALH: Finish this!
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
      * Get all songs from DB
      *
      * @return

@@ -22,6 +22,15 @@ public class SongModel {
     }
 
     /**
+     * Add song from user
+     *
+     * @param userSong
+     */
+    public void addSong(Song userSong) {
+        songManager.addSongToDB(userSong);
+    }
+
+    /**
      *
      * @return new List of all Songs in DB
      */

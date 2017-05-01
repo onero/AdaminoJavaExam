@@ -71,6 +71,11 @@ public class AdaminoJavaExam {
          * MyTunesViewMain to System.out.println all the info from a newly
          * created song by userinput from the console
          */
+        //Assignment 6
+        /*
+         * -Refactor the method from assignment 6 to add the newly created song
+         * to the database
+         */
     }
 
 }

@@ -18,6 +18,15 @@ public class SongManager {
     }
 
     /**
+     * Add song to DB
+     *
+     * @param userSong
+     */
+    public void addSongToDB(Song userSong) {
+        songDAO.addSongToDB(userSong);
+    }
+
+    /**
      * Get all songs from DB
      *
      * @return
