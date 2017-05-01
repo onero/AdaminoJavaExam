@@ -7,7 +7,7 @@ package adaminojavaexam.be;
 
 public class Song {
 
-    private final int mID;
+    private int mID;
     private final String mTitle;
     private final String mArtist;
     private final String mCategory;
@@ -19,6 +19,13 @@ public class Song {
         this.mArtist = artist;
         this.mCategory = category;
         this.mDuration = duration;
+    }
+
+    public Song(String title, String artist, String category, int duration) {
+        mTitle = title;
+        mArtist = artist;
+        mCategory = category;
+        mDuration = duration;
     }
 
     public int getID() {
