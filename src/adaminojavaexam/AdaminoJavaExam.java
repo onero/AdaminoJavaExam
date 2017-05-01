@@ -21,18 +21,18 @@ public class AdaminoJavaExam {
          *
          * "Song"
          * This table needs the following columns:
-         * ID -int- (Primary Key)
+         * ID -int- (Primary Key) AUTO INCREMENT
          * Title -nvarchar-
          * ArtistName -nvarchar- (Foreign Key to table Artist)
          * CategoryID int ALLOW NULL (Foreign key to table Category)
          * Duration int ALLOW NULL
          *
          * "Artist"
-         * ArtistID -int- (Primary Key)
+         * ArtistID -int- (Primary Key) AUTO INCREMENT
          * Name -nvarchar- UNIQUE
          *
          * "Category"
-         * ID -int- (Primary Key)
+         * ID -int- (Primary Key) AUTO INCREMENT
          * Name -nvarchar-
          *
          * Make sure to add a java user for the DB, which should have
@@ -46,7 +46,18 @@ public class AdaminoJavaExam {
          */
         //Assignment 3
         /*
+         * Add an Artist to your DB
+         * Add a Category to your DB
+         * Add a Song by the artist in the category you added with an appr.
+         * duration in whole minutes
          *
+         */
+        //Assignment 4
+        /*
+         * Structure this app into 3-layered architecture
+         * Create appropriate DAO with a method to get all songs from the DB
+         * System.out.println all the information about all songs in
+         * MyTunesViewMain
          */
 
     }
