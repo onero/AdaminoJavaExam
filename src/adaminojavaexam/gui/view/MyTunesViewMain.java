@@ -11,6 +11,7 @@ import adaminojavaexam.gui.model.SongModel;
 public class MyTunesViewMain {
 
     public void start() {
+        UserInput inputFromUser = new UserInput();
         SongModel songModel = new SongModel();
 
         for (Song song : songModel.getSongsFromDB()) {
@@ -20,6 +21,12 @@ public class MyTunesViewMain {
             System.out.println(song.getCategory());
             System.out.println(song.getDuration());
         }
+
+        Song userSong = inputFromUser.createSongFromUserInput();
+        System.out.println(userSong.getTitle());
+        System.out.println(userSong.getArtist());
+        System.out.println(userSong.getCategory());
+        System.out.println(userSong.getDuration());
     }
 
 }

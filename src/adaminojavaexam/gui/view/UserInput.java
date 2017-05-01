@@ -14,14 +14,14 @@ public class UserInput {
      *
      * @return
      */
-    public Song promptUserToAddNewSong() {
+    public Song createSongFromUserInput() {
         System.out.println();
         System.out.println("Add new song:");
-        String name = Console.Readers.readString("Name = ");
+        String title = Console.Readers.readString("Name = ");
         String artistName = Console.Readers.readString("Artist Name = ");
         String categoryName = Console.Readers.readString("Category Name = ");
         int duration = Console.Readers.readInt("Duration = ");
-        Song newSong = new Song(name, artistName, name, duration);
+        Song newSong = new Song(title, artistName, categoryName, duration);
         return newSong;
     }
 
