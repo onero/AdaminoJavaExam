@@ -59,8 +59,6 @@ public class AdaminoJavaExam {
          */
         //Assignment 4
         /*
-         * -Structure this app into 3-layered architecture
-         * -Create a SongDAO with a method to get all songs from the DB
          * -System.out.println all the information about all songs in
          * MyTunesViewMain
          */
