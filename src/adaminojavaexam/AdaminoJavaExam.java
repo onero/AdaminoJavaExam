@@ -45,7 +45,8 @@ public class AdaminoJavaExam {
          */
         //Assignment 2
         /*
-         * -Import the sqljdbc4 jar and fix the issues in DBConnectionManager
+         * -Import the "sqljdbc4.jar" jar and fix the issues in
+         * DBConnectionManager
          * -Edit the DB_Template file found in the root folder of the project
          * with your database and user information
          */
@@ -61,6 +62,14 @@ public class AdaminoJavaExam {
         /*
          * -System.out.println all the information about all songs in
          * MyTunesViewMain
+         */
+        //Assignment 5
+        /*
+         * -Import the "InputReaders.jar" and fix issues in the UserInput class
+         * -Investigate the UserInput class and implement af method called
+         * addSongFromUser in
+         * MyTunesViewMain to System.out.println all the info from a newly
+         * created song by userinput from the console
          */
     }
 
