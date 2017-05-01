@@ -7,7 +7,10 @@ package adaminojavaexam;
 
 public class MyTunesViewMain {
 
-    public static void main(String[] args) {
+    /**
+     * Let's get this show started!
+     */
+    public void start() {
 
     }
 

@@ -15,6 +15,9 @@ public class AdaminoJavaExam {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        MyTunesViewMain main = new MyTunesViewMain();
+        main.start();
+
         // Assignment 1
         /*
          * Create a MSSQL DB which should initially contain three tables
@@ -59,7 +62,6 @@ public class AdaminoJavaExam {
          * -System.out.println all the information about all songs in
          * MyTunesViewMain
          */
-
     }
 
 }
