@@ -6,6 +6,7 @@
 package adaminojavaexam.dal;
 
 import adaminojavaexam.be.Song;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -40,11 +41,11 @@ public class SongDAO {
         try (Connection con = cm.getConnection()) {
             String sql = "SELECT s.ID AS 'SongID', "
                     + "s.Title AS 'SongTitle', "
-                    + "a.Name AS 'ArtistName' "
-                    + "c.Name AS 'CategoryName' "
+                    + "a.Name AS 'ArtistName', "
+                    + "c.Name AS 'CategoryName', "
                     + "s.Duration AS 'SongDuration' "
                     + "FROM Song s "
-                    + "JOIN Artist a ON a.ID = s.ArtistID "
+                    + "JOIN Artist a ON a.ArtistID = s.ArtistID "
                     + "JOIN Category c ON c.ID = s.CategoryID";
 
             PreparedStatement ps = con.prepareStatement(sql);
@@ -53,7 +54,10 @@ public class SongDAO {
             while (rs.next()) {
                 songs.add(getOneSong(rs));
             }
-        } catch (Exception e) {
+        } catch (SQLServerException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
         }
         return songs;
     }
