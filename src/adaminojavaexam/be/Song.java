@@ -11,7 +11,7 @@ public class Song {
     private final String mTitle;
     private final String mArtist;
     private final String mCategory;
-    private int mDuration;
+    private final int mDuration;
 
     public Song(int ID, String title, String artist, String category, int duration) {
         this.mID = ID;

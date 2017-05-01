@@ -10,7 +10,7 @@ import adaminojavaexam.gui.model.SongModel;
 
 public class MyTunesViewMain {
 
-    public static void main(String[] args) {
+    public void start() {
         SongModel songModel = new SongModel();
 
         for (Song song : songModel.getSongsFromDB()) {
