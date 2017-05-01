@@ -19,7 +19,7 @@ public class AdaminoJavaExam {
         /*
          * Create a MSSQL DB which should initially contain three tables
          *
-         * "Song"
+         * -"Song"
          * This table needs the following columns:
          * ID -int- (Primary Key) AUTO INCREMENT
          * Title -nvarchar-
@@ -27,36 +27,36 @@ public class AdaminoJavaExam {
          * CategoryID int ALLOW NULL (Foreign key to table Category)
          * Duration int ALLOW NULL
          *
-         * "Artist"
+         * -"Artist"
          * ArtistID -int- (Primary Key) AUTO INCREMENT
          * Name -nvarchar- UNIQUE
          *
-         * "Category"
+         * -"Category"
          * ID -int- (Primary Key) AUTO INCREMENT
          * Name -nvarchar-
          *
-         * Make sure to add a java user for the DB, which should have
+         * -Make sure to add a java user for the DB, which should have
          * db_datareader and db_datawriter under Membership!
          */
         //Assignment 2
         /*
-         * Import the sqljdbc4 jar and fix the issues in DBConnectionManager
-         * Edit the DB_Template file found in the root folder of the project
+         * -Import the sqljdbc4 jar and fix the issues in DBConnectionManager
+         * -Edit the DB_Template file found in the root folder of the project
          * with your database and user information
          */
         //Assignment 3
         /*
-         * Add an Artist to your DB
-         * Add a Category to your DB
-         * Add a Song by the artist in the category you added with an appr.
+         * -Add an Artist to your DB
+         * -Add a Category to your DB
+         * -Add a Song by the artist in the category you added with an appr.
          * duration in whole minutes
          *
          */
         //Assignment 4
         /*
-         * Structure this app into 3-layered architecture
-         * Create a SongDAO with a method to get all songs from the DB
-         * System.out.println all the information about all songs in
+         * -Structure this app into 3-layered architecture
+         * -Create a SongDAO with a method to get all songs from the DB
+         * -System.out.println all the information about all songs in
          * MyTunesViewMain
          */
 
