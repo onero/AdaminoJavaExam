@@ -10,8 +10,10 @@ import adaminojavaexam.gui.model.SongModel;
 
 public class MyTunesViewMain {
 
+    private SongModel songModel;
+
     public void start() {
-        SongModel songModel = new SongModel();
+        songModel = new SongModel();
 
         for (Song song : songModel.getSongsFromDB()) {
             System.out.println(song.getID());
@@ -27,10 +29,7 @@ public class MyTunesViewMain {
     private void addSongFromUser() {
         UserInput inputFromUser = new UserInput();
         Song userSong = inputFromUser.createSongFromUserInput();
-        System.out.println(userSong.getTitle());
-        System.out.println(userSong.getArtist());
-        System.out.println(userSong.getCategory());
-        System.out.println(userSong.getDuration());
+        songModel.addSong(userSong);
     }
 
 }
