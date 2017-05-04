@@ -12,6 +12,7 @@ public class MyTunesViewMain {
      */
     public void start() {
 
+//        promptUser();
     }
 
     /**
