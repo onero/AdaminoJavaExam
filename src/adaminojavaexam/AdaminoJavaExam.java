@@ -66,8 +66,7 @@ public class AdaminoJavaExam {
          * -Import the "InputReaders.jar" and fix issues in the UserInput class
          * -Investigate the UserInput class and implement af method called
          * "addSongFromUser" in
-         * MyTunesViewMain to System.out.println all the info from a newly
-         * created song by userinput from the console
+         * MyTunesViewMain to create a new song and add it to the DB
          */
     }
 
