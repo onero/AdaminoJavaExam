@@ -4,7 +4,6 @@
 ### YOUR_PROJECT ###
 
 ### NetBeans ###
-nbproject
 build/
 nbbuild/
 dist/
