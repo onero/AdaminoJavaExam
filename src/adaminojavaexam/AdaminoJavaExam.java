@@ -31,7 +31,7 @@ public class AdaminoJavaExam {
          * Duration -int- ALLOW NULL
          *
          * -"Artist"
-         * ArtistID -int- (Primary Key) AUTO INCREMENT
+         * ID -int- (Primary Key) AUTO INCREMENT
          * Name -nvarchar- UNIQUE
          *
          * -"Category"
