@@ -9,8 +9,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-*.xml
-*.mf
 
 ### Eclipse ###
 
