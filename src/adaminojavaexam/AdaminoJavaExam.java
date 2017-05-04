@@ -70,11 +70,42 @@ public class AdaminoJavaExam {
          * -Investigate the UserInput class and implement af method called
          * "addSongFromUser" in
          * MyTunesViewMain to create a new song and add it to the DB
+         * (The creation in DAL should only take "Title" and "ID" as arguments,
+         * for this project we choose to always put "1" as "ArtistID" and "1" as
+         * "CategoryID". Just leave out duration (will make it NULL))
          */
         //Assignment 6
         /*
-         * -Refactor the method from assignment 6 to add the newly created song
-         * to the database
+         * -Refactor your code to print out information about all songs in DB to
+         * a method in MyTunesViewMain called "displayAllSongs"
+         * Make sure that this is the only method called from the start method
+         * in MyTunesViewMain
+         */
+        //Assignment 7
+        /*
+         * -Create a new method called "updateSong" which should ask the user
+         * for an ID of a song to update and then ask for a new "Title" and
+         * parse that to the DB
+         * Make sure that this is the only method called from the start method
+         * in MyTunesViewMain
+         * (Check if UserInput has a method to help with the input of ID and new
+         * title!)
+         */
+        //Assignment 8
+        /*
+         * -Create a new method called "deleteSong" which should ask the user
+         * for an ID of a song to delete and then parse it to the DB
+         * Make sure that this is the only method called from the start method
+         * in MyTunesViewMain
+         * (Again UserInput might have a handy method to get the ID)
+         */
+        //Assignment 9
+        /*
+         * This project has a method called "promptUser" which has been
+         * commented out
+         * -Comment it back in, also in the start method and try to run the
+         * program.
+         * If you get a fully functional menu you've passed the exam!
          */
     }
 
