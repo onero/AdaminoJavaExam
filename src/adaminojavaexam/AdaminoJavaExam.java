@@ -26,7 +26,7 @@ public class AdaminoJavaExam {
          * This table needs the following columns:
          * ID -int- (Primary Key) AUTO INCREMENT
          * Title -nvarchar-
-         * ArtistName -nvarchar- ALLOW NULL (Foreign Key to table Artist)
+         * ArtistID -int- ALLOW NULL (Foreign Key to table Artist)
          * CategoryID -int- ALLOW NULL (Foreign key to table Category)
          * Duration -int- ALLOW NULL
          *
