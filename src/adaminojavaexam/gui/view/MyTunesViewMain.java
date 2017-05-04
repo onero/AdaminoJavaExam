@@ -37,7 +37,8 @@ public class MyTunesViewMain {
      * Add song to DB
      */
     private void addSongFromUser() {
-        Song userSong = UserInput.createSongFromUserInput();
+        String title = UserInput.createSongFromUserInput();
+        Song userSong = new Song(title);
         songModel.addSong(userSong);
     }
 

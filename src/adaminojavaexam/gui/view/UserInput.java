@@ -5,8 +5,6 @@
  */
 package adaminojavaexam.gui.view;
 
-import adaminojavaexam.be.Song;
-
 public class UserInput {
 
     /**
@@ -14,12 +12,11 @@ public class UserInput {
      *
      * @return
      */
-    public static Song createSongFromUserInput() {
+    public static String createSongFromUserInput() {
         System.out.println();
         System.out.println("Add new song:");
         String title = Console.Readers.readString("Name = ");
-        Song newSong = new Song(title);
-        return newSong;
+        return title;
     }
 
     /**
