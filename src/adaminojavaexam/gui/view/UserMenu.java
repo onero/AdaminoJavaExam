@@ -12,10 +12,14 @@ public class UserMenu {
      *
      * @return
      */
-    public int getUserChoice() {
+    public static int getUserChoice() {
         System.out.println("Please select one of the following options: ");
-        System.out.println("1) Display all songs");
-        System.out.println("2) Add song");
+        System.out.println("0) Exit");
+        System.out.println("1) Add song");
+        System.out.println("2) Display all songs");
+        System.out.println("3) Update a song");
+        System.out.println("4) Delete a song");
+        System.out.println();
         int userChoice = Console.Readers.readInt("Your choice: ");
         return userChoice;
     }

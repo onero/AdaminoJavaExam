@@ -27,12 +27,31 @@ public class SongManager {
     }
 
     /**
+     * Delete song by id
+     *
+     * @param id
+     */
+    public void deleteSongByID(int id) {
+        songDAO.deleteSongByID(id);
+    }
+
+    /**
      * Get all songs from DB
      *
      * @return
      */
     public List<Song> getAllSongs() {
         return songDAO.getAllSongs();
+    }
+
+    /**
+     * Update song in DB
+     *
+     * @param title
+     * @param id
+     */
+    public void updateSong(String title, int id) {
+        songDAO.updateSong(title, id);
     }
 
 }

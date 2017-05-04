@@ -28,7 +28,7 @@ public class AdaminoJavaExam {
          * This table needs the following columns:
          * ID -int- (Primary Key) AUTO INCREMENT
          * Title -nvarchar-
-         * ArtistName -nvarchar- (Foreign Key to table Artist)
+         * ArtistName -nvarchar- ALLOW NULL (Foreign Key to table Artist)
          * CategoryID int ALLOW NULL (Foreign key to table Category)
          * Duration int ALLOW NULL
          *
@@ -60,7 +60,8 @@ public class AdaminoJavaExam {
          */
         //Assignment 4
         /*
-         * -System.out.println all the information about all songs in
+         * -System.out.println all the information about all songs from the DB
+         * in
          * MyTunesViewMain
          */
         //Assignment 5

@@ -36,8 +36,38 @@ public class SongDAO {
      * @param userSong
      */
     public void addSongToDB(Song userSong) {
-        //TODO ALH: Finish this!
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        String sql = "INSERT INTO Song (Title, ArtistID, CategoryID) "
+                + "VALUES (?, 1, 1)";
+        try (Connection con = cm.getConnection()) {
+            PreparedStatement ps = con.prepareCall(sql);
+            ps.setString(1, userSong.getTitle());
+
+            ps.executeUpdate();
+        } catch (SQLServerException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    /**
+     * Delete song by id
+     *
+     * @param id
+     */
+    public void deleteSongByID(int id) {
+        String sql = "DELETE FROM Song "
+                + "WHERE ID = ?";
+        try (Connection con = cm.getConnection()) {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, id);
+
+            ps.executeUpdate();
+        } catch (SQLServerException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -80,6 +110,29 @@ public class SongDAO {
         int duration = rs.getInt("SongDuration");
 
         return new Song(ID, title, artist, category, duration);
+    }
+
+    /**
+     * Update song in DB
+     *
+     * @param title
+     * @param id
+     */
+    public void updateSong(String title, int id) {
+        String sql = "UPDATE Song "
+                + "SET Title = ? "
+                + "WHERE ID = ?";
+        try (Connection con = cm.getConnection()) {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, title);
+            ps.setInt(2, id);
+
+            ps.executeUpdate();
+        } catch (SQLServerException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(SongDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
 }

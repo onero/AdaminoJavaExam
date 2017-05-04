@@ -9,9 +9,9 @@ public class Song {
 
     private int mID;
     private final String mTitle;
-    private final String mArtist;
-    private final String mCategory;
-    private final int mDuration;
+    private String mArtist;
+    private String mCategory;
+    private int mDuration;
 
     public Song(int ID, String title, String artist, String category, int duration) {
         this.mID = ID;
@@ -21,11 +21,8 @@ public class Song {
         this.mDuration = duration;
     }
 
-    public Song(String title, String artist, String category, int duration) {
+    public Song(String title) {
         mTitle = title;
-        mArtist = artist;
-        mCategory = category;
-        mDuration = duration;
     }
 
     public int getID() {
