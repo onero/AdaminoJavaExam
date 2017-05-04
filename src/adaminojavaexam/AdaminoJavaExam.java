@@ -29,8 +29,8 @@ public class AdaminoJavaExam {
          * ID -int- (Primary Key) AUTO INCREMENT
          * Title -nvarchar-
          * ArtistName -nvarchar- ALLOW NULL (Foreign Key to table Artist)
-         * CategoryID int ALLOW NULL (Foreign key to table Category)
-         * Duration int ALLOW NULL
+         * CategoryID -int- ALLOW NULL (Foreign key to table Category)
+         * Duration -int- ALLOW NULL
          *
          * -"Artist"
          * ArtistID -int- (Primary Key) AUTO INCREMENT
@@ -38,30 +38,32 @@ public class AdaminoJavaExam {
          *
          * -"Category"
          * ID -int- (Primary Key) AUTO INCREMENT
-         * Name -nvarchar-
+         * Name -nvarchar- UNIQUE
          *
          * -Make sure to add a java user for the DB, which should have
          * db_datareader and db_datawriter under Membership!
          */
         //Assignment 2
         /*
-         * -Import the "sqljdbc4.jar" jar and fix the issues in
-         * DBConnectionManager
-         * -Edit the DB_Template file found in the root folder of the project
-         * with your database and user information
-         */
-        //Assignment 3
-        /*
-         * -Add an Artist to your DB
-         * -Add a Category to your DB
+         * -Add the Artist "Michael Jackson" to your DB
+         * -Add the Category "POP" to your DB
          * -Add a Song by the artist in the category you added with an appr.
          * duration in whole minutes
          *
          */
+        //Assignment 3
+        /*
+         * -Import the "sqljdbc4.jar" jar and fix the issues in
+         * DBConnectionManager
+         * -Copy the DB_Template file found in the root folder of the project to
+         * a new file called DB in root and fill it
+         * with your database and user information
+         */
         //Assignment 4
         /*
-         * -System.out.println all the information about all songs from the DB
-         * in
+         * -Implement functionality to System.out.println all the information
+         * about all songs from the DB
+         * in the method "start" in
          * MyTunesViewMain
          */
         //Assignment 5
